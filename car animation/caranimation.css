@@ -1,0 +1,78 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+.main {
+    position: absolute;
+    z-index: auto;
+    bottom: 10%;
+    animation: gocars 2s linear forwards;
+}
+
+@keyframes gocars {
+    0%{
+        left: 10%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+
+
+.car {
+    width: 500px;
+}
+
+.bothtyre {
+    position: absolute;
+    top: 40%;
+    left: 7.7%;
+    width: 389px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.tyres {
+    height: 80px;
+    animation: roundtyre .5s linear infinite;
+}
+
+@keyframes roundtyre {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 800px;
+}
+
+.roadimg {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    width: 1000%;
+    height: 700px;
+    animation: roadmove 1s linear infinite;
+}
+@keyframes roadmove {
+    0%{
+        right: -300%;
+    }
+    100%{
+        right: 0%;
+    }
+    
+}
